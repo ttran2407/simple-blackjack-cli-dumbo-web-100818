@@ -31,7 +31,7 @@ end
 
 def initial_round
   # code #initial_round here
-  total = deal_card 
+  total = deal_card + deal_card
   return total
   display_card_total (total)
     
@@ -43,8 +43,12 @@ def hit? (num)
 prompt_user
 input = get_user_input
 if input == "s"
-  input
-
+  initial_round
+elsif input == "h"
+  deal_card
+  initial_round
+else puts "Please enter a valid command"
+end
 
 end
 
