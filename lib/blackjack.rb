@@ -40,8 +40,10 @@ end
 def hit? (num)
   # code hit? here
   
-input = prompt_user
-get_user_input
+prompt_user
+input = get_user_input
+if input == "s"
+  input
 
 
 end
