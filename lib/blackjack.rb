@@ -48,13 +48,14 @@ if input == "s"
 elsif input == "h"
   deal_card
   initial_round
-else puts "Please enter a valid command"
+else puts invalid_command
 end
 
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
@@ -63,5 +64,12 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  hit?
+  display_card_total
+  until initial_round > 21
+    end_game
+  end
 end
     
