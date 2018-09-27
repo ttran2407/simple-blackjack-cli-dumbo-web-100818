@@ -44,10 +44,10 @@ def hit? (num)
 prompt_user
 input = get_user_input
 if input == "s"
-  initial_round
+  num
 elsif input == "h"
-  deal_card
-  initial_round
+  num += deal_card
+  num
 else puts invalid_command
 end
 
